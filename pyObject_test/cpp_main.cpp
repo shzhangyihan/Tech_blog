@@ -17,4 +17,5 @@ int main() {
     PyObject * Dict = PyModule_GetDict(Module);
     PyObject * Func = PyDict_GetItemString(Dict, "python_test");
     PyObject * Result = PyObject_CallObject(Func, NULL);
+    Py_Finalize();
 }
