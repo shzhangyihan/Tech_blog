@@ -15,7 +15,10 @@ int main() {
     PyObject * ModuleString = PyString_FromString((char*) "py_function");
     PyObject * Module = PyImport_Import(ModuleString);
     PyObject * Dict = PyModule_GetDict(Module);
-    PyObject * Func = PyDict_GetItemString(Dict, "python_test");
-    PyObject * Result = PyObject_CallObject(Func, NULL);
+    PyObject * PrintFunc = PyDict_GetItemString(Dict, "python_test");
+    PyObject * PrintResult = PyObject_CallObject(PrintFunc, NULL);
+    PyObject * ReturnFunc = PyDict_GetItemString(Dict, "return_test");
+    PyObject * ReturnResult = PyObject_CallObject(ReturnFunc, NULL);
+    printf("Result of call: %u\n", (unsigned int) PyInt_AsLong(ReturnResult));
     Py_Finalize();
 }
