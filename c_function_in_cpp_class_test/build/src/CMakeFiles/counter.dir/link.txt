@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libcounter.so -o libcounter.so CMakeFiles/counter.dir/counter.c.o 

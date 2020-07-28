@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yihan/VSWorkspace/Tech_blog/c_function_in_cpp_class_test/src/main.cpp
+dlfcn.h
+-
+iostream
+-
+test.h
+/home/yihan/VSWorkspace/Tech_blog/c_function_in_cpp_class_test/src/test.h
+
+/home/yihan/VSWorkspace/Tech_blog/c_function_in_cpp_class_test/src/test.cpp
+test.h
+/home/yihan/VSWorkspace/Tech_blog/c_function_in_cpp_class_test/src/test.h
+dlfcn.h
+-
+iostream
+-
+
+/home/yihan/VSWorkspace/Tech_blog/c_function_in_cpp_class_test/src/test.h
+
